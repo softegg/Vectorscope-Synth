@@ -1,4 +1,4 @@
-#Music Synthesizer for the Hackaday Supercon 2024/ Europe 2024 Vectorscope Badge
+# Music Synthesizer for the Hackaday Supercon 2024/ Europe 2024 Vectorscope Badge
 
 This is an add on for the Hackaday Superconference 2023 / Hackaday Europe(Berlin) 2024 Vectorscope badge that adds a small virtual analog synthesizer based on the [Stylish Trucker Belt Synthesizer](https://github.com/softegg/Stylish-Trucker-Belt-Synthesizer).
 It should work with all of the source code from that, so for now get it there.
