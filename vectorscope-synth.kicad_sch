@@ -6,11 +6,12 @@
 	(paper "A4")
 	(title_block
 		(title "Vectorscope Synthesizer")
-		(date "2024-04-08")
-		(rev "0.3")
+		(date "2024-04-11")
+		(rev "0.4")
 		(company "SoftEgg")
-		(comment 1 "Version 0.2 - T.B. Trzepacz @ SoftEgg  7.4.2024")
-		(comment 2 "Version 0.3 - Thea @ Aisler")
+		(comment 1 "Version 0.2 - T.B. Trzepacz @ SoftEgg  2024-4-7")
+		(comment 2 "Version 0.3 - Thea @ Aisler 2024-4-8")
+		(comment 3 "Version 0.4 - T. B. Trzepacz @ SoftEgg 2024-4-11")
 	)
 	(lib_symbols
 		(symbol ".vector:CAP_POL"
@@ -9742,7 +9743,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3.3k"
+		(property "Value" "33k"
 			(at 127.635 180.975 90)
 			(effects
 				(font
