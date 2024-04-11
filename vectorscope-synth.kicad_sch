@@ -2491,7 +2491,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "RGB"
-				(at -2.286 8.4074 0)
+				(at -7.62 8.636 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2500,7 +2500,7 @@
 				)
 			)
 			(property "Value" "LED_Ring_16_WS2812B"
-				(at -2.54 -7.6454 0)
+				(at -7.62 10.668 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2509,7 +2509,7 @@
 				)
 			)
 			(property "Footprint" "SoftEggKiCAD:LED RING 16 WS2812B"
-				(at -2.54 -9.906 0)
+				(at -7.62 15.494 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2519,7 +2519,7 @@
 				)
 			)
 			(property "Datasheet" "None"
-				(at -2.54 -11.938 0)
+				(at -6.858 12.954 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2529,7 +2529,7 @@
 				)
 			)
 			(property "Description" ""
-				(at 0 0 0)
+				(at 5.08 5.08 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2537,59 +2537,24 @@
 					(hide yes)
 				)
 			)
-			(symbol "LED_Ring_16_WS2812B_0_0"
-				(polyline
-					(pts
-						(xy -2.54 -5.08) (xy 15.24 -5.08)
-					)
+			(symbol "LED_Ring_16_WS2812B_0_1"
+				(rectangle
+					(start -7.62 12.7)
+					(end 15.24 2.54)
 					(stroke
-						(width 0.254)
-						(type solid)
+						(width 0)
+						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -2.54 7.62) (xy -2.54 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 15.24 -5.08) (xy 15.24 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 15.24 7.62) (xy -2.54 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin power_in line
-					(at -5.08 5.08 0)
+			)
+			(symbol "LED_Ring_16_WS2812B_1_0"
+				(pin input line
+					(at 0 0 90)
 					(length 2.54)
-					(name "VDD"
+					(name "DIN"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2604,10 +2569,10 @@
 						)
 					)
 				)
-				(pin output line
-					(at -5.08 -2.54 0)
+				(pin power_in line
+					(at 2.54 0 90)
 					(length 2.54)
-					(name "DOUT"
+					(name "VDD"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2623,7 +2588,7 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 -2.54 180)
+					(at 5.08 0 90)
 					(length 2.54)
 					(name "VSS"
 						(effects
@@ -2640,10 +2605,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at 17.78 5.08 180)
+				(pin output line
+					(at 7.62 0 90)
 					(length 2.54)
-					(name "DIN"
+					(name "DOUT"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -5388,7 +5353,7 @@
 		(uuid "ae8fa0ca-d567-45c6-9b57-8e4f90ab838f")
 	)
 	(no_connect
-		(at 173.355 42.545)
+		(at 179.07 30.48)
 		(uuid "cb3d57e0-2365-4492-994a-e201743bf40c")
 	)
 	(no_connect
@@ -5414,6 +5379,16 @@
 			(type default)
 		)
 		(uuid "01bc6ebc-b8ed-4951-9216-abe38d3867df")
+	)
+	(wire
+		(pts
+			(xy 176.53 48.26) (xy 176.53 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01c04e31-363e-49c3-95c8-db203b5af561")
 	)
 	(polyline
 		(pts
@@ -5467,16 +5442,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.355 34.925) (xy 168.275 34.925)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b49ee19-8b73-428c-bc00-8186ded8f7ec")
-	)
-	(wire
-		(pts
 			(xy 156.845 129.54) (xy 160.02 129.54)
 		)
 		(stroke
@@ -5524,6 +5489,16 @@
 			(type default)
 		)
 		(uuid "1021c3ee-3511-425f-82e8-b04d76a98b75")
+	)
+	(wire
+		(pts
+			(xy 173.99 43.18) (xy 173.99 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1071e3ca-a893-4abe-a149-a7fd3c413cc5")
 	)
 	(wire
 		(pts
@@ -5717,16 +5692,6 @@
 	)
 	(wire
 		(pts
-			(xy 196.215 34.925) (xy 203.835 34.925)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "401c59db-51ad-49bf-b394-4c64f86dd00d")
-	)
-	(wire
-		(pts
 			(xy 245.11 52.07) (xy 245.11 49.53)
 		)
 		(stroke
@@ -5887,6 +5852,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 36.83) (xy 171.45 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63eb1a20-2804-45ce-b1bc-19cef62f9ffd")
+	)
+	(wire
+		(pts
 			(xy 236.22 139.065) (xy 238.76 139.065)
 		)
 		(stroke
@@ -6004,16 +5979,6 @@
 			(type default)
 		)
 		(uuid "72a051b6-63c9-4c12-8744-c59e6057dfc5")
-	)
-	(wire
-		(pts
-			(xy 168.275 34.925) (xy 168.275 32.385)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7307c90e-a7b3-4012-9ea0-d146dd12b3e1")
 	)
 	(wire
 		(pts
@@ -6357,6 +6322,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 48.26) (xy 176.53 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b373d3f1-627a-4b78-977e-001f6a768575")
+	)
+	(wire
+		(pts
 			(xy 56.515 164.465) (xy 57.785 164.465)
 		)
 		(stroke
@@ -6407,6 +6382,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 43.18) (xy 173.99 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2b667f2-692f-4e66-aa02-7e619d629ded")
+	)
+	(wire
+		(pts
 			(xy 127.635 173.99) (xy 127.635 175.26)
 		)
 		(stroke
@@ -6424,6 +6409,16 @@
 			(type default)
 		)
 		(uuid "c49344ae-5d1d-4518-829f-91a5b7d6d053")
+	)
+	(wire
+		(pts
+			(xy 171.45 36.83) (xy 171.45 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6b001b8-0eb9-4605-9398-8bba53d9d89f")
 	)
 	(wire
 		(pts
@@ -7279,13 +7274,13 @@
 		(uuid "78d48a3e-306a-401c-b79f-4fae090d2e49")
 	)
 	(label "DGND"
-		(at 196.215 42.545 0)
+		(at 162.56 48.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "81fe69e7-61a0-423f-b9e6-42a554244b8d")
 	)
@@ -7510,13 +7505,13 @@
 		(uuid "ad92af57-0926-4d90-b373-fcb50e9f7432")
 	)
 	(label "LED_DIN"
-		(at 203.835 34.925 0)
+		(at 165.1 36.83 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "b09a1c3b-8033-4e34-a172-87340ff6ba88")
 	)
@@ -8209,17 +8204,16 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 168.275 32.385 0)
+		(at 160.02 43.18 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0fcc6603-8e3e-4c79-a744-e77139b3a816")
 		(property "Reference" "#PWR05"
-			(at 168.275 36.195 0)
+			(at 160.02 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8228,7 +8222,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 168.275 27.305 0)
+			(at 160.02 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8236,7 +8230,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.275 32.385 0)
+			(at 160.02 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8245,7 +8239,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.275 32.385 0)
+			(at 160.02 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8254,7 +8248,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 168.275 32.385 0)
+			(at 160.02 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10668,32 +10662,33 @@
 	)
 	(symbol
 		(lib_id "SoftEgg:LED_Ring_16_WS2812B")
-		(at 178.435 40.005 0)
+		(at 171.45 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e10a229b-423e-4f0e-ba73-c153d1cf1e3f")
 		(property "Reference" "RGB1"
-			(at 184.785 27.94 0)
+			(at 164.338 19.304 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "LED_Ring_16_WS2812B"
-			(at 184.785 30.48 0)
+			(at 164.592 21.082 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "SoftEggKiCAD:LED RING 16 WS2812B"
-			(at 175.895 49.911 0)
+			(at 168.91 40.386 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10703,7 +10698,7 @@
 			)
 		)
 		(property "Datasheet" "None"
-			(at 175.895 51.943 0)
+			(at 168.91 42.418 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10713,7 +10708,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 178.435 40.005 0)
+			(at 171.45 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
